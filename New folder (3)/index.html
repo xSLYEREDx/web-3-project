@@ -4,7 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Food</title>
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
   </head>
   <body>
     <div class="container-fluid">
@@ -15,7 +18,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-      <ul class="navbar-nav text-danger">
+      <ul class="navbar-nav text-danger padding-4">
         <li class="nav-item">
           <a class="nav-link active " aria-current="page" href="#">Home</a>
         </li>
@@ -40,9 +43,54 @@
     </div>
   </div>
 </nav>
+</div>
+<div id="carouselExample" class="carousel slide">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="/img/images/img/img-1.png" class="d-block w-100" alt="...">
     </div>
+   
+  </div>
+ 
+</div>
+<div class="counter-item">
+<div class="row">
+  <div class="col-sm-3">
+    <i class="fa-solid fa-graduation-cap"></i>
+    <h2 class="counter">999999</h2>
+    <p>client reviews</p>
+  </div>
+  <div class="col-sm-3">
+    <i class="fa-solid fa-graduation-cap"></i>
+    <h2 class="counter">999999</h2>
+    <p>client reviews</p>
+  </div>
+  <div class="col-sm-3">
+    
+    <i class="fa-solid fa-graduation-cap"></i>
+    <h2 class="counter">9999999</h2>
+    <p>client reviews</p>
+  </div>
+  <div class="col-sm-3">
+    
+    <i class="fa-solid fa-graduation-cap"></i>
+    <h2 class="counter">999999</h2>
+    <p>client reviews</p>
+  </div>
+</div>
+</div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="jquery.counterup.min.js"></script>
+    <script>
+      jQuery(document).ready(function($){
+        $('.counter').counterUp({
+        delay: 10,
+        time: 1000
+    });
+      });
+    </script>
   </body>
 </html>
